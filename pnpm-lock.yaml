@@ -1162,84 +1162,6 @@ importers:
       stylelint-scss: 4.6.0_stylelint@15.10.1
       typescript: 4.9.5
 
-  enterprise/packages/auth:
-    specifiers:
-      '@nestjs/common': '>=9.3.x'
-      '@nestjs/jwt': '>=9'
-      '@nestjs/passport': 9.0.3
-      '@novu/application-generic': ^0.19.0
-      '@novu/dal': ^0.19.0
-      '@novu/shared': ^0.19.0
-      '@types/chai': ^4.2.11
-      '@types/mocha': ^8.0.1
-      '@types/node': ^14.6.0
-      '@types/sinon': ^9.0.0
-      chai: ^4.2.0
-      cross-env: ^7.0.3
-      mocha: ^8.1.1
-      nodemon: ^2.0.3
-      passport: 0.6.0
-      passport-google-oauth: ^2.0.0
-      passport-oauth2: ^1.6.1
-      sinon: ^9.2.4
-      ts-node: ~10.9.1
-      typescript: 4.9.5
-    dependencies:
-      '@nestjs/common': 10.2.2_atc7tu2sld2m3nk4hmwkqn6qde
-      '@nestjs/jwt': 10.1.0_@nestjs+common@10.2.2
-      '@nestjs/passport': 9.0.3_kn4ljbedllcoqpuu4ifhphsdsu
-      '@novu/application-generic': link:../../../packages/application-generic
-      '@novu/dal': link:../../../libs/dal
-      '@novu/shared': link:../../../libs/shared
-      passport: 0.6.0
-      passport-google-oauth: 2.0.0
-      passport-oauth2: 1.7.0
-    devDependencies:
-      '@types/chai': 4.3.4
-      '@types/mocha': 8.2.3
-      '@types/node': 14.18.42
-      '@types/sinon': 9.0.11
-      chai: 4.3.7
-      cross-env: 7.0.3
-      mocha: 8.4.0
-      nodemon: 2.0.22
-      sinon: 9.2.4
-      ts-node: 10.9.1_wh2cnrlliuuxb2etxm2m3ttgna
-      typescript: 4.9.5
-
-  enterprise/packages/digest-schedule:
-    specifiers:
-      '@novu/shared': ^0.19.0
-      '@types/chai': ^4.2.11
-      '@types/mocha': ^8.0.1
-      '@types/node': ^14.6.0
-      '@types/sinon': ^9.0.0
-      chai: ^4.2.0
-      cross-env: ^7.0.3
-      date-fns: ^2.29.2
-      mocha: ^8.1.1
-      nodemon: ^2.0.3
-      rrule: ^2.7.2
-      sinon: ^9.2.4
-      ts-node: ~10.9.1
-      typescript: 4.9.5
-    dependencies:
-      '@novu/shared': link:../../../libs/shared
-      date-fns: 2.29.3
-      rrule: 2.7.2
-    devDependencies:
-      '@types/chai': 4.3.4
-      '@types/mocha': 8.2.3
-      '@types/node': 14.18.42
-      '@types/sinon': 9.0.11
-      chai: 4.3.7
-      cross-env: 7.0.3
-      mocha: 8.4.0
-      nodemon: 2.0.22
-      sinon: 9.2.4
-      ts-node: 10.9.1_wh2cnrlliuuxb2etxm2m3ttgna
-      typescript: 4.9.5
-
   libs/dal:
     specifiers:
       '@aws-sdk/client-s3': ^3.382.0
@@ -2030,7 +1952,7 @@ importers:
       '@vitejs/plugin-vue-jsx': ^3.0.0
       '@vue/eslint-config-prettier': ^7.0.0
       '@vue/eslint-config-typescript': ^11.0.0
-      '@vue/tsconfig': ^0.1.3
+      '@vue/tsconfig': ^0.4.0
       eslint: ^8.22.0
       eslint-plugin-vue: ^9.3.0
       npm-run-all: ^4.1.5
@@ -2054,7 +1976,7 @@ importers:
       '@vitejs/plugin-vue-jsx': 3.0.1_vite@4.4.9+vue@3.2.47
       '@vue/eslint-config-prettier': 7.1.0_7bukkzi2qfqwzn63s5moor2wwy
       '@vue/eslint-config-typescript': 11.0.2_wjfky2tccqcyepzc44bwgbyisq
-      '@vue/tsconfig': 0.1.3_@types+node@18.15.11
+      '@vue/tsconfig': 0.4.0
       eslint: 8.38.0
       eslint-plugin-vue: 9.10.0_eslint@8.38.0
       npm-run-all: 4.1.5
@@ -6785,7 +6707,7 @@ packages:
       '@babel/core': ^7.4.0-0
     dependencies:
       '@babel/core': 7.22.11
-      '@babel/helper-compilation-targets': 7.22.15
+      '@babel/helper-compilation-targets': 7.22.10
       '@babel/helper-plugin-utils': 7.22.5
       debug: 4.3.4
       lodash.debounce: 4.0.8
@@ -7152,6 +7074,7 @@ packages:
   /@babel/helper-validator-option/7.22.5:
     resolution: {integrity: sha512-R3oB6xlIVKUnxNUxbmgq7pKjxpru24zlimpE8WK47fACIlM0II/Hm1RS8IaOI7NgCr6LNS+jl5l75m20npAziw==}
     engines: {node: '>=6.9.0'}
+    dev: false
 
   /@babel/helper-wrap-function/7.20.5:
     resolution: {integrity: sha512-bYMxIWK5mh+TgXGVqAtnu5Yn1un+v8DDZtqyzKRLUzrh70Eal2O3aZ7aPYiMADO4uKlkzOiRiZ6GX5q3qxvW9Q==}
@@ -10312,11 +10235,11 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/compat-data': 7.21.4
+      '@babel/compat-data': 7.22.20
       '@babel/core': 7.21.4
-      '@babel/helper-compilation-targets': 7.22.10
+      '@babel/helper-compilation-targets': 7.22.15
       '@babel/helper-plugin-utils': 7.22.5
-      '@babel/helper-validator-option': 7.22.5
+      '@babel/helper-validator-option': 7.22.15
       '@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression': 7.18.6_@babel+core@7.21.4
       '@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining': 7.20.7_@babel+core@7.21.4
       '@babel/plugin-proposal-async-generator-functions': 7.20.7_@babel+core@7.21.4
@@ -10382,7 +10305,7 @@ packages:
       '@babel/plugin-transform-unicode-escapes': 7.18.10_@babel+core@7.21.4
       '@babel/plugin-transform-unicode-regex': 7.18.6_@babel+core@7.21.4
       '@babel/preset-modules': 0.1.5_@babel+core@7.21.4
-      '@babel/types': 7.22.11
+      '@babel/types': 7.22.19
       babel-plugin-polyfill-corejs2: 0.3.3_@babel+core@7.21.4
       babel-plugin-polyfill-corejs3: 0.6.0_@babel+core@7.21.4
       babel-plugin-polyfill-regenerator: 0.4.1_@babel+core@7.21.4
@@ -16153,26 +16076,6 @@ packages:
       - webpack-cli
     dev: true
 
-  /@nestjs/common/10.2.2_atc7tu2sld2m3nk4hmwkqn6qde:
-    resolution: {integrity: sha512-TCOJK2K4FDT3GxFfURjngnjBewS/hizKNFSLBXtX4TTQm0dVQOtESnnVdP14sEiPM6suuWlrGnXW9UDqItGWiQ==}
-    peerDependencies:
-      class-transformer: '*'
-      class-validator: '*'
-      reflect-metadata: ^0.1.12
-      rxjs: ^7.1.0
-    peerDependenciesMeta:
-      class-transformer:
-        optional: true
-      class-validator:
-        optional: true
-    dependencies:
-      iterare: 1.2.1
-      reflect-metadata: 0.1.13
-      rxjs: 7.8.1
-      tslib: 2.6.2
-      uid: 2.0.2
-    dev: false
-
   /@nestjs/common/10.2.2_j3td4gnlgk75ora6o6suo62byy:
     resolution: {integrity: sha512-TCOJK2K4FDT3GxFfURjngnjBewS/hizKNFSLBXtX4TTQm0dVQOtESnnVdP14sEiPM6suuWlrGnXW9UDqItGWiQ==}
     peerDependencies:
@@ -16397,16 +16300,6 @@ packages:
       passport: ^0.4.0 || ^0.5.0 || ^0.6.0
     dependencies:
       '@nestjs/common': 10.2.2_j3td4gnlgk75ora6o6suo62byy
-      passport: 0.6.0
-    dev: false
-
-  /@nestjs/passport/9.0.3_kn4ljbedllcoqpuu4ifhphsdsu:
-    resolution: {integrity: sha512-HplSJaimEAz1IOZEu+pdJHHJhQyBOPAYWXYHfAPQvRqWtw4FJF1VXl1Qtk9dcXQX1eKytDtH+qBzNQc19GWNEg==}
-    peerDependencies:
-      '@nestjs/common': ^8.0.0 || ^9.0.0
-      passport: ^0.4.0 || ^0.5.0 || ^0.6.0
-    dependencies:
-      '@nestjs/common': 10.2.2_atc7tu2sld2m3nk4hmwkqn6qde
       passport: 0.6.0
     dev: false
 
@@ -24833,15 +24726,8 @@ packages:
   /@vue/shared/3.2.47:
     resolution: {integrity: sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==}
 
-  /@vue/tsconfig/0.1.3_@types+node@18.15.11:
-    resolution: {integrity: sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg==}
-    peerDependencies:
-      '@types/node': '*'
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-    dependencies:
-      '@types/node': 18.15.11
+  /@vue/tsconfig/0.4.0:
+    resolution: {integrity: sha512-CPuIReonid9+zOG/CGTT05FXrPYATEqoDGNrEaqS4hwcw5BUNM2FguC0mOwJD4Jr16UpRVl9N0pY3P+srIbqmg==}
     dev: true
 
   /@webassemblyjs/ast/1.11.1:
@@ -26596,7 +26482,7 @@ packages:
     dependencies:
       '@babel/core': 7.20.12
       '@babel/helper-define-polyfill-provider': 0.3.3_@babel+core@7.20.12
-      core-js-compat: 3.30.0
+      core-js-compat: 3.32.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -26608,7 +26494,7 @@ packages:
     dependencies:
       '@babel/core': 7.21.4
       '@babel/helper-define-polyfill-provider': 0.3.3_@babel+core@7.21.4
-      core-js-compat: 3.30.0
+      core-js-compat: 3.32.2
     transitivePeerDependencies:
       - supports-color
 
@@ -31668,7 +31554,7 @@ packages:
       minimatch: 3.1.2
       object.entries: 1.1.6
       object.fromentries: 2.0.6
-      semver: 6.3.1
+      semver: 6.3.0
 
   /eslint-plugin-prettier/4.2.1_6l7kvkw7pbq7sx3iiqo67pyozi:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
@@ -36475,7 +36361,7 @@ packages:
       pretty-format: 27.5.1
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      ts-node: 10.9.1_wh2cnrlliuuxb2etxm2m3ttgna
+      ts-node: 10.9.1_j6r65ghnzvzk7vhdh4hyogrm4a
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -42277,41 +42163,11 @@ packages:
       passport-oauth2: 1.7.0
     dev: false
 
-  /passport-google-oauth/2.0.0:
-    resolution: {integrity: sha512-JKxZpBx6wBQXX1/a1s7VmdBgwOugohH+IxCy84aPTZNq/iIPX6u7Mqov1zY7MKRz3niFPol0KJz8zPLBoHKtYA==}
-    engines: {node: '>= 0.4.0'}
-    dependencies:
-      passport-google-oauth1: 1.0.0
-      passport-google-oauth20: 2.0.0
-    dev: false
-
-  /passport-google-oauth1/1.0.0:
-    resolution: {integrity: sha512-qpCEhuflJgYrdg5zZIpAq/K3gTqa1CtHjbubsEsidIdpBPLkEVq6tB1I8kBNcH89RdSiYbnKpCBXAZXX/dtx1Q==}
-    dependencies:
-      passport-oauth1: 1.3.0
-    dev: false
-
-  /passport-google-oauth20/2.0.0:
-    resolution: {integrity: sha512-KSk6IJ15RoxuGq7D1UKK/8qKhNfzbLeLrG3gkLZ7p4A6DBCcv7xpyQwuXtWdpyR0+E0mwkpjY1VfPOhxQrKzdQ==}
-    engines: {node: '>= 0.4.0'}
-    dependencies:
-      passport-oauth2: 1.7.0
-    dev: false
-
   /passport-jwt/4.0.1:
     resolution: {integrity: sha512-UCKMDYhNuGOBE9/9Ycuoyh7vP6jpeTp/+sfMJl7nLff/t6dps+iaeE0hhNkKN8/HZHcJ7lCdOyDxHdDoxoSvdQ==}
     dependencies:
       jsonwebtoken: 9.0.0
       passport-strategy: 1.0.0
-    dev: false
-
-  /passport-oauth1/1.3.0:
-    resolution: {integrity: sha512-8T/nX4gwKTw0PjxP1xfD0QhrydQNakzeOpZ6M5Uqdgz9/a/Ag62RmJxnZQ4LkbdXGrRehQHIAHNAu11rCP46Sw==}
-    engines: {node: '>= 0.4.0'}
-    dependencies:
-      oauth: 0.9.15
-      passport-strategy: 1.0.0
-      utils-merge: 1.0.1
     dev: false
 
   /passport-oauth2/1.7.0:
